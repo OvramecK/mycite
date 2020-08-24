@@ -1,3 +1,31 @@
+/*noinspection CssUnknownTarget*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@font-face {
+    font-family: 'russo_oneregular';
+    /*noinspection CssUnknownTarget*/
+    src: url('russoone-regular-webfont.eot');
+    /*noinspection CssUnknownTarget,CssUnknownTarget,CssUnknownTarget,CssUnknownTarget*/
+    src: url('russoone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('russoone-regular-webfont.woff2') format('woff2'),
+    url("russoone-regular-webfont.woff") format('woff'),
+    url('russoone-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;1,400&display=swap');
+
+@font-face {
+    font-family: 'fira_sansregular';
+    /*noinspection CssUnknownTarget*/
+    src: url('firasans-regular-webfont.eot');
+    /*noinspection CssUnknownTarget,CssUnknownTarget,CssUnknownTarget,CssUnknownTarget*/
+    src: url('firasans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('firasans-regular-webfont.woff2') format('woff2'),
+    url('firasans-regular-webfont.woff') format('woff'),
+    url("firasans-regular-webfont.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -37,13 +65,17 @@ q:before, q:after {
     content: none;
 }
 /*glavna*/
+
+p {
+    font-family: 'Montserrat', sans-serif;
+}
 body{
     margin: 0;
     padding: 0;
     color: black;
-    background:rgba(255, 250, 200, 0.5);
-    -webkit-border-radius: 7px;
-    border-radius: 7px;
+    background:linear-gradient(burlywood, beige ,bisque);
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
 }
 h1, h2, h3, h4 {
     font-size: 50px;
@@ -54,7 +86,7 @@ h1, h2, h3, h4 {
     border: 1px solid wheat;
     width: 1200px;
     position: relative;
-    transition: width 4s ease, background 2s;
+    transition: width 10s ease-out, background 2s;
 }
 .wrapper:hover {
     width: 1400px;
@@ -68,6 +100,7 @@ h1, h2, h3, h4 {
     min-height: 20px;
     z-index: 5;
     color: wheat;
+    font-family: 'Roboto Mono', monospace;
 }
 .logo{
     position: absolute;
@@ -109,6 +142,7 @@ ul ul{
     top: 100%;
     left: 0;
     padding-top: 10px;
+    font-family: 'russo_oneregular', serif;
 }
 ul ul {
     display: none;
